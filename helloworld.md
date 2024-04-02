@@ -8,6 +8,7 @@
 - Printf() needs a \n
    - crlf for Windows
    - nl for Linux
+- compile with `gcc -ansi -o <name>.o <name>.c`
 
 ```c
 #include <stdio.h>
