@@ -1,4 +1,4 @@
-# Switch statements
+# For Loops
 - Executes statments multiple times (usually a set number)
 - Syntax: `for(<init>;<conditional>;<modifier>){<statment>;}`
    - INIT is executed before the first before of the loop
