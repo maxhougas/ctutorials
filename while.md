@@ -9,20 +9,32 @@
 
 ```c
 #include <stdio.h>
-#define LOOPSTOP 3
+#define LOOPSTOP 5
 
 int main(int argc, char** argv)
 {
 
- /*int loopstop = 5;*/
- int i,j;
+ int timeslooped=0;
 
- for(i=0;i<LOOPSTOP;i++)
+ while(timeslooped < LOOPSTOP)
  {
-  for(j=0;j<i;j++)
-   printf("#");
-  printf("\n");
+  if(timeslooped == 3)
+  {
+   printf("timeslooped is 3, continuing!\n");
+   timeslooped++;
+   continue;
+  }
+  printf("Looped %d times!\n",timeslooped);
+  timeslooped++;
  }
+
+ /*timeslooped=0;
+
+ do
+ {
+  printf("Looped %d times!\n",timeslooped);
+  timeslooped++;
+ } while(timeslooped < LOOPSTOP);*/
 
  return 0;
 }
